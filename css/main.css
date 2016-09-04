@@ -102,7 +102,7 @@ section {
 /*for mobile*/
 @media (min-width: 768px) {
 	.navbar-default {
-		background-color: transparent;
+		background: transparent;
 		border-color: rgba(255,255,255,0.3);
 	}
 	.navbar-default .navbar-header .navbar-brand {
@@ -288,6 +288,9 @@ header .header-content .header-inner-content p {
 /* for mobile*/
 #call-to-action .section-heading {
 	margin : 0 auto 20px;
+}
+.icon {
+  color: #F05F40;
 }
 .no-gutter > [class*='col-'] {
 	padding-right: 0;
