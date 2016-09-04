@@ -41,6 +41,9 @@ p {
 	background-color: #222222;
 	color: white;
 }
+.short-description-header {
+	margin-bottom: 50px;
+}
 .short-description-faded{
 	color: rgba(255, 255, 255, 0.7);
 }
