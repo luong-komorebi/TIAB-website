@@ -44,7 +44,7 @@ $(document).ready(function () {
     }, 300);
 
     // Initialize and Configure Magnific Popup Lightbox Plugin
-    /*$('.popup-gallery').magnificPopup({
+    $('.popup-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
         tLoading: 'Loading image #%curr%...',
@@ -58,6 +58,6 @@ $(document).ready(function () {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
-*/
+
 
 })
