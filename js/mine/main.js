@@ -27,12 +27,14 @@ $(document).ready(function () {
 			top: 100,
 		}
 	})
+
+    // Initialize and Configure Scroll Reveal Animation
 	window.sr = ScrollReveal();
     sr.reveal('.sr-icons', {
         duration: 600,
         scale: 0.2,
         distance: '0px'
-    }, 200);
+    }, 300);
     sr.reveal('.sr-button', {
         duration: 1000,
         delay: 200
@@ -42,6 +44,12 @@ $(document).ready(function () {
         scale: 0.3,
         distance: '0px'
     }, 300);
+    sr.reveal('.sr-images', {
+        duration: 700,
+        scale: 0.2,
+        rotate: { x: 60, y: 20, z: 60 },
+        easing: 'ease-in-out',
+    }, 900);
 
     // Initialize and Configure Magnific Popup Lightbox Plugin
     $('.popup-gallery').magnificPopup({
@@ -58,6 +66,4 @@ $(document).ready(function () {
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
-
-
 })
