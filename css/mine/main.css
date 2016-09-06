@@ -11,6 +11,11 @@ hr {
 hr.light {
 	border-color: #000;
 }
+hr.heavy {
+	max-width: 250px;
+	text-align: left;
+	margin-left: 0;
+}
 a {
 	-webkit-transition: all 0.35s;
 	-moz-transition: all 0.35s;
@@ -34,8 +39,17 @@ p {
 	line-height: 1.5;
 	margin-bottom: 20px;
 }
+.room-info p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 8px 0;
+}
 .bg-primary {
 	background-color: #F05F40;
+}
+.bg-total-dark {
+	background-color: rgba(0, 0, 0, 1);
+	color: white;
 }
 .bg-dark {
 	background-color: #222222;
@@ -158,6 +172,26 @@ header {
 	background-image: url('../../static/coverphoto2.jpg');
 	text-align: center;
 	color: white;
+}
+#Demo-header {
+	background-image: url(../../static/service-cover.jpg);
+}
+header .header-content .header-inner-content .arrow {
+	text-align: center;
+	position: relative;
+    margin: auto;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+}
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(40px); }
+	80% { -webkit-transform: translateY(60px); }
 }
 header .header-content {
   position: relative;
@@ -294,6 +328,9 @@ header .header-content .header-inner-content p {
 }
 .icon {
   color: #F05F40;
+}
+.icon.room-icon {
+	margin-right: 10px;
 }
 .no-gutter > [class*='col-'] {
 	padding-right: 0;
